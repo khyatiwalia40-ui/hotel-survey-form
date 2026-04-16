@@ -1,2 +1,7 @@
-# hotel-survey-form
-A hotel survey form built using HTML to collect user feedback with validation and multiple input types.
+This is my first HTML project.
+
+It is a survey form that collects user feedback about a hotel.
+
+Built using:
+- HTML forms
+- Input validation
