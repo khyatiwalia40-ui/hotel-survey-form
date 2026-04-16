@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Hotel Survey Form</h1>
+    <p id="description">Discover an exquisite collection of experiences—romantic escapes, family delights, bold adventures and signature indulgences. Each is thoughtfully crafted to immerse you in the warmth, charm and elegance that define every stay.</p>
+
+      <form id="survey-form">
+        <label id="name-label" for="name">Name:</label><br>
+        <input id="name" name="name" type="text" required placeholder="e.g. Varun Dhawan"><br><br>
+
+        <label id="email-label" for="email">Email</label><br>
+        <input id="email" name="email" type="email" required placeholder="e.g. VarunDhawan@email.com"><br><br>
+
+        <label id="number-label" for="number">Age</label><br>
+        <input id="number" name="age" type="number" min="8" max="100" placeholder="e.g. 20"><br><br>
+
+        <fieldset>
+          <legend>Service Rating</legend>
+        
+        <label for="service">How was the Service?</label>
+        <select id="dropdown" name="service">
+          <option value="poor">Poor</option>
+          <option value="satisfactory">Satisfactory</option>
+          <option value="good">Good</option>
+          <option value="very-good">Very Good</option>
+          <option value="excellent">Excellent</option>
+        </select>  
+        </fieldset>
+
+        <fieldset>
+          <legend>Food Rating</legend>
+        
+        <label for="food">How was the Food?</label>
+        <select id="food-dropdown" name="Food">
+          <option value="poor">Poor</option>
+          <option value="satisfactory">Satisfactory</option>
+          <option value="good">Good</option>
+          <option value="very-good">Very Good</option>
+          <option value="excellent">Excellent</option>
+        </select>  
+        </fieldset>
+
+        <fieldset>
+          <legend>Was this your first time at our hotel</legend>
+          
+          <input type="radio" id="yes-option" name="hotel-stay" value="yes">
+          <label for="yes-option">Yes</label>
+
+          <input type="radio" id="no-option" name="hotel-stay" value="no">
+          <label for="no-option">No</label>
+        </fieldset>  
+
+        <fieldset>
+          <legend>Why did you choose to stay at our hotel</legend>
+
+          <input type="checkbox" id="ads" value="ads" name="choice">
+          <label for="ads">Social Media Ads</label>
+
+        <input type="checkbox" id="recommendation" value="recommendation" name="choice">
+        <label for="recommendation">Personal Recommendation</label>
+
+        <input type="checkbox" id="location" value="location" name="choice">
+        <label for="location">Location</label>
+
+        <input type="checkbox" id="price" value="price" name="choice">
+        <label for="price">Price</label>
+        </fieldset>
+
+        <label for="comments">Other Comments?</label><br>
+          <textarea id="comments" name="comments" cols="30" rows="10" placeholder="Enter your feedback here...">
+          </textarea>
+
+        <button id="submit" type="submit">Submit</button>  
+
+      </form>  
+  </body>
+</html>
